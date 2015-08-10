@@ -4,6 +4,7 @@
       url: sa + '/posts',
       method: 'GET'
     }).done(function(data) {
-      console.log(data);
+      document.getElementById(listOne).innerHTML = "";
+      document.getElementById(listOne).append("<li></li>");
     });
   });
