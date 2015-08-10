@@ -1,4 +1,5 @@
-  $(document).ready(function(){
+$(document).ready(function(){
+  $('#magic-button').on('click', function(e) {
     var sa = 'http://jsonplaceholder.typicode.com';
     $.ajax({
       url: sa + '/posts',
@@ -8,3 +9,4 @@
       document.getElementById(listOne).append("<li></li>");
     });
   });
+});
